@@ -165,7 +165,7 @@ public abstract class AbstractDesigner extends BorderPane
                 jls.getJarManager().addCurrentJreClassFileSource();
 //                File jdkHome = new File("/path/to/jdk/root/to/use");
 //                jls.getJarManager().addClassFileSource(LibraryInfo.getJreJarInfo(jdkHome));
-                DirLibraryInfo dirInfo = new DirLibraryInfo("Pad/target/classes/", new DirSourceLocation("src/main/"));
+                DirLibraryInfo dirInfo = new DirLibraryInfo("target/classes/", new DirSourceLocation("src/main/"));
                 jls.getJarManager().addClassFileSource(dirInfo);
 
             } catch (IOException ioe) {
