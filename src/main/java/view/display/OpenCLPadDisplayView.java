@@ -1,21 +1,7 @@
 package view.display;
 
-import edu.umd.cs.findbugs.annotations.Nullable;
-import model.figure.DrawFigureFactory;
-
-import org.jhotdraw.draw.io.OutputFormat;
-import org.jhotdraw.draw.io.InputFormat;
-import org.jhotdraw.draw.print.DrawingPageable;
-import org.jhotdraw.draw.io.DOMStorableInputOutputFormat;
-
-import java.awt.print.Pageable;
-
-import org.jhotdraw.gui.*;
 import org.jhotdraw.undo.*;
-import org.jhotdraw.util.*;
 
-import java.awt.*;
-import java.beans.*;
 import java.io.*;
 import java.net.URI;
 
@@ -24,8 +10,6 @@ import org.jhotdraw.app.AbstractView;
 import org.jhotdraw.draw.*;
 import org.jhotdraw.gui.URIChooser;
 import view.console.ConsolePanel;
-
-import javax.swing.*;
 
 /**
  * OpenCLPadDisplayView shows a DrawingView where users create and modify figures.

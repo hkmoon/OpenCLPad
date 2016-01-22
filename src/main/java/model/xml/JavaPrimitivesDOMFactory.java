@@ -67,7 +67,7 @@ public class JavaPrimitivesDOMFactory implements DOMFactory {
 
     private String escape(String name) {
         // Escape dollar characters by two full-stop characters
-        name = name.replaceAll("\\$", "..");
+        name = name.replaceAll("\\$", "" );
         return name;
 
     }

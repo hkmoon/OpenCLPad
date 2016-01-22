@@ -3,8 +3,6 @@ package view.console;
 import org.jhotdraw.util.prefs.PreferencesUtil;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.PrintStream;
 import java.util.prefs.Preferences;
 import javax.swing.*;

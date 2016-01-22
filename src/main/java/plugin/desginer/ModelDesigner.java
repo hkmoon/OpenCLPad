@@ -3,10 +3,6 @@ package plugin.desginer;
 import org.jhotdraw.util.prefs.PreferencesUtil;
 import plugin.ModelPlugin;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.prefs.Preferences;
-
 /**
  * ModelDesigner generates a user-defined RealRandomAccessible
  *
@@ -16,7 +12,6 @@ import java.util.prefs.Preferences;
  */
 public class ModelDesigner extends AbstractDesigner {
 
-    private final Preferences prefs;
     private final KernelDesigner kernelDesigner;
 
     public ModelDesigner(KernelDesigner kd)
@@ -25,11 +20,6 @@ public class ModelDesigner extends AbstractDesigner {
 
         initializeComponents();
         kernelDesigner = kd;
-        prefs = PreferencesUtil.userNodeForPackage(getClass());
-
-        PreferencesUtil.installFramePrefsHandler(prefs, "modelDesigner", this);
-        Point loc = this.getLocation();
-        this.setLocation(loc);
     }
 
 
@@ -45,14 +35,5 @@ public class ModelDesigner extends AbstractDesigner {
         {
             System.out.println("Compile it first!");
         }
-    }
-
-    public static void main(String[] args) {
-        // Start all Swing applications on the EDT.
-//        SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                new ModelDesigner().setVisible(true);
-//            }
-//        });
     }
 }

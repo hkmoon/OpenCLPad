@@ -1,7 +1,5 @@
 package plugin;
 
-import java.util.LinkedList;
-
 /**
  * Interface of plugin
  *

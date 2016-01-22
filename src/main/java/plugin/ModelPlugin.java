@@ -1,7 +1,5 @@
 package plugin;
 
-import java.util.LinkedList;
-
 /**
  * Abstract ModelPlugin for creating RandomAccessibleSource
  *
